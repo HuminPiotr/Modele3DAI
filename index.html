@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modele 3D</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem 10rem;
+      font-family: sans-serif;
+      background: #fafafa;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .model-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 5vh;
+      padding: 2rem;
+    }
+
+    model-viewer {
+      width: 100%;
+      height: 80vh;
+      background: #eaeaea;
+      border-radius: 1rem;
+      max-width: 100%;
+    }
+
+    .description {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #333;
+      text-align: center;
+      max-width: 800px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Programy AI generujące modele 3D </h1>
+  <div class="program-section">
+    <h2>Masterpiece X – Generate</h2>
+    <p>Darmowa wersja programu oferuje 250 kredytów (5 generowań).</p>
+    <p>strona do płatnego planu: <a target="_blank" href="https://www.masterpiecex.com/pricing#yui_3_17_2_1_1743754301036_75">link</a></p>
+    <p>Aplikacja udziela wszelkich praw do wygenerowanych modeli <a target="_blank" href="https://www.masterpiecex.com/masterpiecex-terms-of-use">link</a></p>
+
+    <div class="model-section">
+        <model-viewer 
+          src="./domek_1.glb" 
+          alt="Model pierwszy" 
+          camera-controls 
+          auto-rotate
+          exposure="2"
+          shadow-intensity="2"
+          environment-image="neutral"
+        >
+      </model-viewer>
+        <div class="description">
+            <p>Budynek 1 wierzchołki: 13 658</p>
+            <p>Wygenerowany z zdjęcia</p>
+        </div>
+        <a href="./domek_1.glb" download="./domek_1.glb">
+          <button class="button">Pobierz model 3D</button>
+        </a>
+      </div>
+    
+      <div class="model-section">
+        <model-viewer 
+          src="./domek_2.glb" 
+          alt="Model drugi" 
+          camera-controls 
+          auto-rotate
+
+        >
+        </model-viewer>
+        <div class="description">
+            <p>Budynek 2 wierzchołki: 42 373</p>
+            <p>Wygenerowany z zdjęcia</p>
+        </div>
+        <a href="./domek_2.glb" download="./domek_2.glb">
+          <button class="button">Pobierz model 3D</button>
+        </a>
+        
+      </div>
+    
+      <div class="model-section">
+        <model-viewer src="krzesło_1.glb" alt="Model trzeci" camera-controls auto-rotate></model-viewer>
+        <div class="description">
+            <p>Krzesło 1 wierzchołki: 8133</p>
+            <p>Wygenerowano z tekstu</p>
+        </div>
+        <a href="krzesło_1.glb" download="krzesło_1.glb">
+          <button class="button">Pobierz model 3D</button>
+        </a>
+        
+      </div>
+    
+      <div class="model-section">
+        <model-viewer src="krzesło_2.glb" alt="Model czwarty" camera-controls auto-rotate></model-viewer>
+        <div class="description">
+            <p>Krzesło 2  wierzchołki:  11 093</p>
+            <p>Wygenerowano z tekstu</p>
+        </div>
+        <a href="krzesło_2.glb" download="krzesło_2.glb">
+          <button class="button">Pobierz model 3D</button>
+        </a>
+      </div>
+
+  </div>
+
+  <div class="program-section">
+    <h2>Luma AI Genie</h2>
+    <p>Darmowe narzędzie do generowania modeli z tekstu.</p>
+    <p>Tutaj mam problem z znalezieniem konkretnych informacji co do licencjonowania. Niby narzędzie jest darmowe ale nie znalazłem informacji do jego używania w celach komercyjnych. Większość domumentów pisze o innym produkcie od Luma AI do generowania video, w tym przypadku użycie komercyjne jest dozwolone po wykupieniu odpowiedniej subskrypcji</p>
+    <p>zasady użytkowania (4.9): <a target="_blank"   href="https://lumalabs.ai/learning-hub/terms-of-use">link</a></p>
+    <div class="model-section">
+        <model-viewer src="./domek1_luma.glb" alt="Model pierwszy" camera-controls auto-rotate></model-viewer>
+        <div class="description">
+            <p>Budynek 1 wierzchołki: 33 628</p>
+            <p>Wygenerowany z tekstu</p>
+        </div>
+        <a href="./domek1_luma.glb" download="./domek1_luma.glb">
+          <button class="button">Pobierz model 3D</button>
+        </a>
+    </div>
+    <div class="model-section">
+        <model-viewer src="./domek2_luma.glb" alt="Model pierwszy" camera-controls auto-rotate></model-viewer>
+        <div class="description">
+            <p>Budynek 2 wierzchołki: 33 621</p>
+            <p>Wygenerowany z tekstu</p>
+        </div>
+        <a href="./domek2_luma.glb" download="./domek2_luma.glb">
+          <button class="button">Pobierz model 3D</button>
+        </a>
+    </div>
+    <div class="model-section">
+        <model-viewer src="./krzeslo_luma.glb" alt="Model pierwszy" camera-controls auto-rotate></model-viewer>
+        <div class="description">
+            <p>Budynek 2 wierzchołki: 13 658</p>
+            <p>Wygenerowany z tekstu</p>
+        </div>
+        <a href="./krzeslo_luma.glb" download="./krzeslo_luma.glb">
+          <button class="button">Pobierz model 3D</button>
+        </a>
+    </div>
+</div>
+
+<div class="program-section">
+    <h2><a target="_blank" href="https://trellis3d.github.io/">TRELLIS</a></h2>
+    <p>Świetny program udostępniany open-source. Pozwala na generowanie modeli z jednego, wielu obrazków lub tekstu.
+      Można go nawet pobrać na swój komputer i generować modele lokalnie. W tym przypadku umożliwia dodatkowe opcje takie jak doszkalanie modelu.
+      Licencja na wygenerowane modele niestety pozostaje skomplikowana. Autorzy pisza że oprogramowanie jest na licencji MIT (a wiec pozwalajcej na komercyjne użycie) ale z wyłczeniem niektórych modułów działajcych w oprogramowaniu, które sa udostępniane na innych licencjach. </p>
+      <p>Znalazłem watek w którym użytkownicy zastępuja ograniczone licencjami bilbioteki innymi z swobodnym użyciem: <a href="https://github.com/microsoft/TRELLIS/issues/41">link</a></p>
+      <p>Ja do użycia programu użyłem platformy <a href="https://huggingface.co/">huggingface</a> która oferuje w darmowym planie limitowany dostęp do maszyny na której możemy uruchomić program. Myślę że platforma jest warta zainteresowania, bo oferuje wiele ciekawych narzędzi AI.</p>
+
+    <div class="model-section">
+        <model-viewer 
+          src="./domek1_trellis.glb" 
+          alt="Model pierwszy" 
+          camera-controls 
+          auto-rotate
+          exposure="4"
+          shadow-intensity="4"
+          environment-image="neutral"
+        >
+        </model-viewer>
+        <div class="description">
+            <p>Krzesło wierzchołki: 17 460</p>
+            <p>Wygenerowany z kilku zdjęć</p>
+        </div>
+        <a href="./domek1_trellis.glb" download="./domek1_trellis.glb">
+          <button class="button">Pobierz model 3D</button>
+        </a>
+    </div>
+    <div class="model-section">
+        <model-viewer 
+          src="./domek2_trellis.glb" 
+          alt="Model pierwszy" 
+          camera-controls 
+          auto-rotate
+          exposure="4"
+          shadow-intensity="2"
+          environment-image="neutral"
+        >
+      </model-viewer>
+        <div class="description">
+            <p>Budynek 2 wierzchołki: 41 802</p>
+            <p>Wygenerowany z kilku zdjęć</p>
+        </div>
+        <a href="./domek2_trellis.glb" download="./domek2_trellis.glb">
+          <button class="button">Pobierz model 3D</button>
+        </a>
+    </div>
+    <div class="model-section">
+        <model-viewer 
+          src="./krzeslo_trellis.glb" 
+          alt="Model pierwszy" 
+          camera-controls 
+          auto-rotate
+          exposure="3"
+          shadow-intensity="1"
+          environment-image="neutral"
+        >
+        </model-viewer>
+        <div class="description">
+            <p>Krzesło wierzchołki: 6787</p>
+            <p>Wygenerowany z zdjęcia</p>
+        </div>
+        <a href="./krzeslo_trellis.glb" download="./krzeslo_trellis.glb">
+          <button class="button">Pobierz model 3D</button>
+        </a>
+    </div>
+
+</div>
+
+<div class="program-section">
+  <h2><a href="https://makerworld.com/en/makerlab/imageTo3d?from=makerlab">Maker World</a></h2>
+  <p>Narzedzie stworozne do wydruku 3d, generuje ładnie wygladajce modele ale z duża ilościa wierzchołków. Modeli można używac komercyjnie, jeśli sa udostępniane publicznie powinno się załaczyć informacje o twórcach.  </p>
+
+  <div class="model-section">
+    <model-viewer 
+      src="./maker_domek.glb" 
+      alt="Model pierwszy" 
+      camera-controls 
+      auto-rotate
+      exposure="1"
+      shadow-intensity="1"
+      environment-image="neutral"
+    >
+    </model-viewer>
+    <div class="description">
+        <p>Budynek 1 wierzchołki: 249 954</p>
+        <p>Wygenerowany z zdjęcia</p>
+    </div>
+    <a href="./maker_domek.glb" download="./maker_domek.glb">
+      <button class="button">Pobierz model 3D</button>
+    </a>
+</div>
+
+<div class="model-section">
+  <model-viewer 
+    src="./maker_domek2.glb" 
+    alt="Model pierwszy" 
+    camera-controls 
+    auto-rotate
+    exposure="1"
+    shadow-intensity="1"
+    environment-image="neutral"
+  >
+  </model-viewer>
+  <div class="description">
+      <p>Budynek 2 wierzchołki: 249 834</p>
+      <p>Wygenerowany z zdjęcia</p>
+  </div>
+  <a href="./maker_domek2.glb" download="./maker_domek2.glb">
+    <button class="button">Pobierz model 3D</button>
+  </a>
+</div>
+
+<div class="model-section">
+  <model-viewer 
+    src="./maker_krzeslo.glb" 
+    alt="Model pierwszy" 
+    camera-controls 
+    auto-rotate
+    exposure="1"
+    shadow-intensity="1"
+    environment-image="neutral"
+  >
+  </model-viewer>
+  <div class="description">
+      <p>Krzesło wierzchołki: 246 531</p>
+      <p>Wygenerowany z zdjęcia</p>
+  </div>
+  <a href="./maker_krzeslo.glb" download="./maker_krzeslo.glb">
+    <button class="button">Pobierz model 3D</button>
+  </a>
+</div>
+
+<div class="program-section">
+  <h2><a target="_blank" href="https://stable-x.github.io/Hi3DGen/">Hi3DGen</a></h2>
+  <p>Generuje bardzo ładne modele z duża ilościa szczegółów, niestety nie generuje tekstury.</p>
+  <p>Jest to oprogramowanie open-source podobnie jak TRELLIS.</p>
+
+
+  <div class="model-section">
+    <model-viewer 
+      src="./domek1_hi3dgen_res.glb" 
+      alt="Model pierwszy" 
+      camera-controls 
+      auto-rotate
+      exposure="0.3"
+      shadow-intensity="1"
+      environment-image="neutral"
+    >
+    </model-viewer>
+    <div class="description">
+        <p>Budynek1: poczatkowo otrzymałem ponad 300k wierzchołków ale po szybkiej obróbce w Blenderze otrzymałem: 195 900</p>
+        <p>Wygenerowany z zdjęcia</p>
+    </div>
+    <a href="./domek1_hi3dgen_res.glb" download="./domek1_hi3dgen_res.glb">
+      <button class="button">Pobierz model 3D</button>
+    </a>
+  </div>
+
+
+  <div class="model-section">
+    <model-viewer 
+      src="./domek2_hi3dgen_res.glb" 
+      alt="Model pierwszy" 
+      camera-controls 
+      auto-rotate
+      exposure="0.3"
+      shadow-intensity="1"
+      environment-image="neutral"
+    >
+    </model-viewer>
+    <div class="description">
+        <p>Budynek 2: poczatkowo 658 708 wierzchołków po obróbce w Blenderze otrzymałem: 204 934</p>
+        <p>Wygenerowany z zdjęcia</p>
+    </div>
+    <a href="./domek2_hi3dgen_res.glb" download="./domek2_hi3dgen_res.glb">
+      <button class="button">Pobierz model 3D</button>
+    </a>
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>
